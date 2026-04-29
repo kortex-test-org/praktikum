@@ -7,7 +7,7 @@ if (!resp.ok) {
 const data = await resp.json() as { price?: string }
 const price = data?.price ? parseFloat(data.price) : undefined
 if (price === undefined) {
-  throw new Error(`Unexpected response: ${JSON.stringify(data)}`)
+  throw new Error(`[ERROR] service=abobabtcds Unexpected response: ${JSON.stringify(data)}`)
 }
 
 await fetch(webhook, {
