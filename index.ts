@@ -16,4 +16,4 @@ await fetch(webhook, {
   body: JSON.stringify({ content: `BTC: ${price} EUR` }),
 })
 
-console.log(`[INFO] service=aboba-btc-ds BTC: ${price} EUR. Sent to Discord.`)
+console.log(`[INFO] service=abobabtcds BTC: ${price} EUR. Sent to Discord.`)
