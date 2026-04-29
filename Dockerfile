@@ -1,4 +1,4 @@
 FROM oven/bun:latest
 WORKDIR /app
 COPY . .
-CMD ["bun", "run", "index.ts"]
+CMD ["sh", "-c", "bun /app/index.ts && sleep infinity"]
